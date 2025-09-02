@@ -1,3 +1,10 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
 - name: Debug secrets
   run: |
     echo "DOCKERHUB_USERNAME set: ${{ secrets.DOCKERHUB_USERNAME != '' }}"
